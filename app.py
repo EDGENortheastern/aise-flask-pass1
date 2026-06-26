@@ -9,9 +9,9 @@ def load_user():
 
 @app.route('/')
 def home():
-    return render_template('index.html')
-    # saved_user = load_user()
-    # return saved_user["username"]
+    # return render_template('index.html')
+    saved_user = load_user()
+    return saved_user["username"]
     
 
 @app.route('/login')
